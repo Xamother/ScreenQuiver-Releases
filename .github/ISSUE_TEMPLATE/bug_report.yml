@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a problem with ScreenQuiver or its documentation.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For suspected security vulnerabilities, follow [SECURITY.md](https://github.com/Xamother/ScreenQuiver-Releases/blob/main/SECURITY.md) without posting exploit details here.
+        Redact personal information, monitor serial numbers, tokens and private file paths.
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - Stable C#
+        - Rust / WinUI 3 preview
+        - Documentation or downloads
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or release tag
+      description: Use the exact tag from Releases or the version shown in About.
+      placeholder: "For example: v1.3.0 or rust-v2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version and build
+      placeholder: "For example: Windows 11, version and OS build from winver"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe the smallest set of steps that reproduces the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+      description: Include any error message. Screenshots are optional.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant setup or accessibility information
+      description: If relevant, describe GPU/driver, display connections, docking, scaling or assistive technology. Omit serial numbers.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted log excerpts
+      description: Optional. Include only relevant excerpts; do not upload tokens or complete unredacted settings/diagnostics.
+      render: text

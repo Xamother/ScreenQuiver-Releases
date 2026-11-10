@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/Xamother/ScreenQuiver-Releases/blob/main/SECURITY.md
+    about: Read the private-reporting instructions before sharing any vulnerability details.
+  - name: Download ScreenQuiver
+    url: https://github.com/Xamother/ScreenQuiver-Releases/releases
+    about: Official stable releases and separate Rust previews.
