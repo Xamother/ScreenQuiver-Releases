@@ -15,7 +15,8 @@ release-specific terms or grant permission to redistribute the application.
 
 Third-party components remain subject to their own licences, copyright notices
 and any independently granted rights. Complete component notices accompany the
-application and are available from its About section. This notice does not
+application. Recent builds expose them in About; older builds may place them
+under Settings → Updates or alongside the executable. This notice does not
 restrict rights granted by those licences or by mandatory law.
 
 GitHub's terms govern use of the GitHub service, including any rights they grant
