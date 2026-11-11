@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest an improvement to ScreenQuiver.
+title: "[Feature]: "
+body:
+  - type: dropdown
+    id: edition
+    attributes:
+      label: Edition
+      options:
+        - Both editions
+        - Stable C#
+        - Rust / WinUI 3 preview
+        - Documentation or downloads
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe the task or difficulty you want to address.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or additional context
+      description: Optional. Explain any workaround or other approaches you considered.
